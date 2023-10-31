@@ -1,0 +1,167 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f2eae2;
+  margin: 2rem 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.copyright,
+.card {
+  margin-top: auto;
+}
+
+.copyright {
+  text-align: center;
+  line-height: 1.2;
+  width: 90%;
+  max-width: 100rem;
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #3d8168;
+  color: #fff;
+  padding: 1.2rem 2rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+@media (min-width: 60rem) {
+  .btn {
+    padding: 1.6rem 2.25rem;
+  }
+}
+.btn:hover {
+  background-color: #1a4032;
+}
+.btn img {
+  width: 1.6rem;
+  height: 1/6rem;
+}
+
+.card {
+  background-color: #fff;
+  width: 90%;
+  max-width: 70rem;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: auto;
+}
+@media (min-width: 600px) {
+  .card {
+    display: flex;
+  }
+}
+@media (min-width: 800px) {
+  .card {
+    height: 40rem;
+  }
+}
+.card__img {
+  flex: 1;
+}
+.card__img img {
+  height: 100%;
+  object-fit: cover;
+}
+.card__content {
+  flex: 1;
+  padding: 2rem;
+}
+@media (min-width: 600px) {
+  .card__content {
+    padding: 2.5rem;
+  }
+}
+@media (min-width: 800px) {
+  .card__content {
+    padding: 4rem 2.5rem;
+  }
+}
+.card__subtitle {
+  color: #6c7289;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 800px) {
+  .card__subtitle {
+    font-size: 1.8rem;
+  }
+}
+.card__title {
+  font-family: "Fraunces", serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+@media (min-width: 800px) {
+  .card__title {
+    font-size: 3.5rem;
+  }
+}
+.card__text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+}
+.card__prices {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.card__price-now {
+  font-size: 2.5rem;
+  font-family: "Fraunces", serif;
+  color: #3d8168;
+  font-weight: 700;
+}
+.card__price-before {
+  position: relative;
+  font-size: 1.4rem;
+  text-decoration: line-through;
+  color: #6c7289;
+}
